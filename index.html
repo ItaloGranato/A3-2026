@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrawLang - Analisador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>DrawLang</h1>
+    <p>Digite um programa para realizar a análise léxica.</p>
+
+    <textarea id="codigo">
+
+tela 400 300
+
+retangulo 50 50 200 100 preenchimento azul
+
+    </textarea>
+
+    <br />
+    
+    <button id="executar">Analisar código</button>
+
+    <div class="resultado">
+      <h2>Tokens encontrados</h2>
+      <pre id="tokens">Aguardando análise...</pre>
+
+      <h2>Erros léxicos</h2>
+      <pre id="erros">Aguardando análise...</pre>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+
+<!--  
+
+T E S T E S
+
+tela 400 300
+
+retangulo 50 50 200 100 preenchimento azul
+circulo 100 100 30 preenchimento vermelho
+linha 0 0 200 200 traco preto espessura 2
+
+-->
